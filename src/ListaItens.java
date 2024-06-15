@@ -32,6 +32,8 @@ public class ListaItens {
     return valorTotal;
     }
     public void exibirItens(){
-        System.out.println(produtos);
+        for (Item item : produtos) {
+            System.out.println(item);
+        }
     }
 }

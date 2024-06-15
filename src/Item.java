@@ -25,11 +25,11 @@ public class Item {
     }
     @Override
     public String toString() {
-        return "Você está comprando" + quantidade + nome + "(s)" + "que custa " + preco;
+        return "Você está comprando " + quantidade + " "+ nome + "(s)" + " que custa(m) " + preco;
     }
     public static void main(String[] args) {
         ListaItens listaCompras = new ListaItens();
-
+        listaCompras.addItem("Moto", 5000.00, 4);
         listaCompras.addItem("Carro", 10000.00, 2);
         listaCompras.exibirItens();
         System.out.println("O valor total é " + listaCompras.calcularValorTotal());
